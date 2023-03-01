@@ -1,0 +1,56 @@
+*Assignment 1*
+
+
+Question 1:What type of polymorphism has been implemented here?
+Answer :- In above  program Run Time Polymorphism(Method Overriding) is done
+        Method Overriding means one or two method have same name, same return type, same Arguments and also same number of Arguments but in different classes
+	means In method overriding child class derive the parent class method  as it is without any changes
+
+
+Question 2:Why did I choose the type "double" for balance?
+Answer :-  Float is of size 32 bits while double is of size 64 bits. Hence, double can handle much bigger fractional numbers than float and double is easier to contain and computate numbers more accurately
+ 
+Question 3:Why did I choose "interestRate" to be of type double and not int?
+Answer :- interest Rate can be in float value and also explain as below question
+
+Question 4: In the class BankAccount the member variables have been made protected - why not Public or Private?
+Answer :- BankAcount is base class of PlatinumBankAccount if we mention member variable as private then platinumBankAccount cann't derived that member funcation in that class also we mention public then any 
+	  class or outside the packages class also derived that member function so here we mention as protected rather than private and public
+	  protected member function access only in derived class and other childs class of same packages
+
+
+Question 5:What is "Super" keyword?
+Answer :- Super is keyword use to access the parent class member function in child class
+        1) to access the parent class constructor It is the first line of every constructor to call the parent constructor
+        2)to access the parent class member variables
+	3) to access the parent class function 
+
+*Assignment 2*
+
+Question 1: What is "JDBC_URL"? Can you give an example of that? Which database did you use?
+Answer :- A JDBC URL provides a way of identifying a database so that the appropriate driver recognizes it and connects to it.
+	example = jdbc:mysql://localhost:3306/database name ,username password etc where jdbc is the API, mysql is the database, localhost is the server name on which mysql is running, we may also use IP address, 3306 is the port number and database name ,username,password
+
+Question 2:What if I don't close the connection? What will happen?
+Answer :- Java's garbage collector will close the connection when it cleans up stale objects.
+
+Question 3:Why "throws"?  What does this keyword denote?
+Answer :- throws keyword use for Exception handling ,Throws is use with method signature
+	  The throws keyword indicates what exception type may be thrown by a method It handlw at a time two or more exception at a time
+
+Question 4:Can you write a code to get Account details using JDBC?
+Answer :- yes, we can use preparedstatement and Resultset with ExecuteQuery method
+
+
+
+*Assignment 3*
+
+Question 1:Which are the two databases this code is connecting to?
+Answer :-MySQL and postgreSQL
+
+Question 2:Can you explain why two different JDBC drivers had to be loaded?
+Answer :- MySQL is a purely relational database, whereas PostgreSQL is an object-relational database.
+
+Question 3:Can you suggest how to make the code better using the "finally" block?
+Answer :- all connection close in finally block so exception or not but conection always close after every excution
+
